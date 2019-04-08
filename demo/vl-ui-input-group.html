@@ -1,0 +1,83 @@
+<html lang="nl">
+  <head>
+    <title>vl-ui-input-group voorbeeld</title>
+  </head>
+
+  <script type="module" src="../vl-input-group.src.js"></script>
+  <script type="module" src="../node_modules/vl-ui-button/vl-button.js"></script>
+
+  <style>
+    body {
+      padding: 2.5em !important;
+      max-width: 900px !important;
+      margin:auto !important;
+    }
+
+    .demo {
+      margin-bottom: 15px;
+    }
+
+    h1 {
+      font-size: x-large !important;
+    }
+
+    h2 {
+      font-size: large !important;
+      margin-top: 20px !important;
+    }
+  </style>
+
+  <body>
+    <h1>vl-ui-input-group demo</h1>
+
+    <h2>Webuniversum input group:</h2>
+
+    <p>Dit is een voorbeeld van een "vl-ui-input-group" component van Webuniversum.</p>
+
+    <label class="vl-form__label"
+           for="city-3"
+    >
+      Gemeente
+    </label>
+    <div class="vl-input-group">
+      <button class="vl-button">
+        Locatie kiezen  </button>  <input class="vl-input-field vl-input-field--block"
+                                          type="text"
+                                          id="city-3"
+                                          name="city-3"
+                                          value=""
+    />
+    </div>
+
+    <p>
+      <a href="https://overheid.vlaanderen.be/webuniversum/v3/documentation/forms/vl-ui-input-group/">
+        Meer voorbeelden en documentatie</a>.
+    </p>
+
+    <h2>Web Component input group:</h2>
+
+    <p>Input group with text add-on left</p>
+    <div class="demo">
+      <!-- TODO vl-form-message -->
+      <div is="vl-input-group">
+        <vl-button>Locatie kiezen</vl-button>
+        <!-- TODO vl-input -->
+        <input type="text">
+      </div>
+    </div>
+
+    <p>Input group with narrow button icon add-on right</p>
+    <div class="demo">
+      <!-- TODO vl-form-message -->
+      <div is="vl-input-group">
+        <!-- TODO vl-input -->
+        <input type="text">
+        <!-- TODO datepicker ... -->
+        <vl-button>Locatie kiezen</vl-button>
+      </div>
+    </div>
+
+
+
+  </body>
+</html>
