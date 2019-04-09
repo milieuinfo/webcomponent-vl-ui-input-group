@@ -1,16 +1,23 @@
-import { NativeVlElement } from '/node_modules/vl-ui-core/vl-core.js';
+import { VlElement } from '/node_modules/vl-ui-core/vl-core.js';
 
 /**
  * vl-ui-input-group
  *
  * @demo demo/vl-ui-input-group.html
  */
-export class VlInputGroup extends NativeVlElement(HTMLDivElement) {
+export class VlInputGroup extends VlElement(HTMLElement) {
 
-  connectedCallback() {
-    this.classList.add('vl-input-group');
+  constructor() {
+    super(`
+            <style>
+                @import "../style.css";
+            </style>
+            <div class="vl-input-group">
+              <slot></slot>
+            </div>
+        `);
   }
 
 }
 
-customElements.define('vl-input-group', VlInputGroup, {extends: 'div'});
+customElements.define('vl-input-group', VlInputGroup);
