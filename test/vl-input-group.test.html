@@ -13,16 +13,16 @@
 <body>
 <test-fixture id="vl-input-group-fixture">
   <template>
-    <div id="input-group" is="vl-input-group"></div>
+    <vl-input-group></vl-input-group>
   </template>
 </test-fixture>
 
 <script>
   suite('<vl-input-group>', () => {
 
-    test('heeft de vl-input-group class', () => {
-      const label = fixture('vl-input-group-fixture');
-      assert.isTrue(label.classList.contains('vl-input-group'));
+    test('heeft een div met de vl-input-group class', () => {
+      const group = fixture('vl-input-group-fixture');
+      assert.isTrue(group.shadowRoot.querySelector('div').classList.contains('vl-input-group'));
     });
 
   });
