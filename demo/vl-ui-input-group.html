@@ -5,12 +5,17 @@
 
   <script type="module" src="../vl-input-group.src.js"></script>
   <script type="module" src="../node_modules/vl-ui-button/vl-button.js"></script>
+  <script type="module" src="../node_modules/vl-ui-form-message/vl-form-message.js"></script>
+  <script type="module" src="../node_modules/vl-ui-input-field/vl-input-field.js"></script>
+  <script type="module" src="../node_modules/vl-ui-icon/vl-icon.js"></script>
 
   <style>
     body {
-      padding: 2.5em !important;
-      max-width: 900px !important;
-      margin:auto !important;
+      padding: 1.5rem !important;
+    }
+
+    body > *:not(:first-child) {
+      margin-top: 1.5rem;
     }
 
     .demo {
@@ -34,19 +39,22 @@
 
     <p>Dit is een voorbeeld van een "vl-ui-input-group" component van Webuniversum.</p>
 
-    <label class="vl-form__label"
-           for="city-3"
-    >
-      Gemeente
-    </label>
-    <div class="vl-input-group">
-      <button class="vl-button">
-        Locatie kiezen  </button>  <input class="vl-input-field vl-input-field--block"
-                                          type="text"
-                                          id="city-3"
-                                          name="city-3"
-                                          value=""
-    />
+    <div class="demo">
+      <label class="vl-form__label"
+             for="city-3"
+      >
+        Gemeente
+      </label>
+      <div class="vl-input-group">
+        <button class="vl-button">
+          Locatie kiezen  </button>  <input class="vl-input-field vl-input-field--block"
+                                            type="text"
+                                            id="city-3"
+                                            name="city-3"
+                                            value=""
+      />
+
+      </div>
     </div>
 
     <p>
@@ -58,26 +66,21 @@
 
     <p>Input group with text add-on left</p>
     <div class="demo">
-      <!-- TODO vl-form-message -->
+      <label is="vl-form-message" for="demo-1">Gemeente</label>
       <div is="vl-input-group">
-        <vl-button>Locatie kiezen</vl-button>
-        <!-- TODO vl-input -->
-        <input type="text">
+        <button is="vl-button">Locatie kiezen</button>
+        <input is="vl-input-field" type="text" id="demo-1" >
       </div>
     </div>
 
     <p>Input group with narrow button icon add-on right</p>
     <div class="demo">
-      <!-- TODO vl-form-message -->
+      <label is="vl-form-message" for="demo-2">Gemeente</label>
       <div is="vl-input-group">
-        <!-- TODO vl-input -->
-        <input type="text">
-        <!-- TODO datepicker ... -->
-        <vl-button>Locatie kiezen</vl-button>
+        <input is="vl-input-field" type="text" id="demo-2" >
+        <button is="vl-button" narrow><vl-icon icon="location">Locatie kiezen</vl-icon></button>
       </div>
     </div>
-
-
 
   </body>
 </html>

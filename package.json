@@ -29,7 +29,9 @@
     "replace": "1.0.0",
     "uglify-js-es6": "2.8.9",
     "vl-ui-button": "1.0.0",
+    "vl-ui-form-message": "0.0.1",
     "vl-ui-icon": "0.2.0",
+    "vl-ui-input-field": "0.0.1",
     "vl-ui-util": "0.0.2",
     "wct-browser-legacy": "1.0.2",
     "web-component-tester": "6.9.2"
