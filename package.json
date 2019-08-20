@@ -1,6 +1,6 @@
 {
   "name": "vl-ui-input-group",
-  "version": "1.0.8",
+  "version": "1.0.10",
   "description": "Gebruik de 'input group' component om een 'input field' en een 'input add-on' te combineren. Bijvoorbeeld: de 'vl-datepicker' component combineert een 'input field' en een 'input add-on' in een 'input group'.",
   "main": "vl-input-group.js",
   "scripts": {
@@ -31,7 +31,7 @@
     "vl-ui-button": "1.0.10",
     "vl-ui-form-message": "2.1.1",
     "vl-ui-icon": "2.0.6",
-    "vl-ui-input-field": "1.0.4",
+    "vl-ui-input-field": "1.0.6",
     "vl-ui-util": "^1.2.3",
     "wct-browser-legacy": "1.0.2",
     "web-component-tester": "6.9.2"
