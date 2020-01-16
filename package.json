@@ -40,7 +40,7 @@
     "vl-ui-icon": "^2.1.0",
     "vl-ui-input-addon": "^1.0.1",
     "vl-ui-input-field": "^1.1.1",
-    "vl-ui-util": "^3.2.5"
+    "vl-ui-util": "^3.4.1"
   },
   "publishConfig": {
     "registry": "http://artifactory-pr-build.lb.cumuli.be:8081/artifactory/api/npm/acd-npm/"
