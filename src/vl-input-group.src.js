@@ -17,7 +17,7 @@ export class VlInputGroup extends NativeVlElement(HTMLDivElement) {
   }
 
   get _stylePath() {
-      return '/node_modules/vl-ui-input-group/style.css';
+      return '../style.css';
   }
 }
 
