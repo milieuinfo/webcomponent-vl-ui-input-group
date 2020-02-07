@@ -1,6 +1,5 @@
 const VlInputGroup = require('../components/vl-input-group');
-const { Page } = require('vl-ui-core');
-const { Config } = require('vl-ui-core');
+const { Page, Config } = require('vl-ui-core').Test;
 
 class VlInputGroupPage extends Page {
     async _getInputGroup(selector) {
