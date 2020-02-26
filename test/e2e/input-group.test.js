@@ -1,4 +1,4 @@
-const { driver } = require('vl-ui-core').Test.Setup;
+const { assert, driver } = require('vl-ui-core').Test.Setup;
 const VlInputGroup = require('./pages/vl-input-group.page');
 
 describe('vl-input-group', async () => {
@@ -8,7 +8,7 @@ describe('vl-input-group', async () => {
         return vlInputGroup.load();
     });
 
-    after(async () => {
-        return driver.quit();
+    it("Dummy test om de browsers te sluiten", () => {
+    	assert.isTrue(true);
     });
 });

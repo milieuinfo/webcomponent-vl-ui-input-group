@@ -1,3 +1,3 @@
 module.exports = {
-    VlInputGroup: require('../vl-input-group.src.js').VlInputGroup
+    VlInputGroup: require('../dist/vl-input-group.src.js').VlInputGroup
 };
