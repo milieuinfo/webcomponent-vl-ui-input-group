@@ -8,7 +8,10 @@ describe('vl-input-group', async () => {
         return vlInputGroup.load();
     });
 
-    it("Dummy test om de browsers te sluiten", () => {
-    	assert.isTrue(true);
+    it("Een gebruiker kan een input-addon en een input-field zien", async () => {
+    	const inputGroup = await vlInputGroup.getInputGroup();
+
+        await assert.eventually.isDefined(inputGroup.getInputAddon());
+        await assert.eventually.isDefined(inputGroup.getInputField());
     });
 });
