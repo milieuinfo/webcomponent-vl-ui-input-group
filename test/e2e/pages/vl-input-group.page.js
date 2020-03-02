@@ -9,6 +9,10 @@ class VlInputGroupPage extends Page {
     async load() {
         await super.load(Config.baseUrl + '/demo/vl-input-group.html');
     }
+
+    async getInputGroup() {
+        return this._getInputGroup('#input-group');
+    }
 }
 
 module.exports = VlInputGroupPage;

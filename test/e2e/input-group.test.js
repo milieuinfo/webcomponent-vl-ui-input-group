@@ -8,7 +8,7 @@ describe('vl-input-group', async () => {
         return vlInputGroup.load();
     });
 
-    it("Dummy test om de browsers te sluiten", () => {
-    	assert.isTrue(true);
+    it("Een gebruiker kan een input-group zien", async () => {
+    	await assert.eventually.exists(vlInputGroup.getInputGroup());
     });
 });
