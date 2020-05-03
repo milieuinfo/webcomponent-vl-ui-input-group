@@ -51,7 +51,7 @@
   },
   "devDependencies": {
     "@govflanders/vl-ui-input-group": "3.9.1",
-    "vl-ui-button": "^4.0.0",
+    "vl-ui-button": "^5.0.0",
     "vl-ui-form-message": "^5.0.0",
     "vl-ui-icon": "^5.0.0",
     "vl-ui-input-addon": "^3.0.0",
