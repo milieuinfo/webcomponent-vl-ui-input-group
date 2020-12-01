@@ -1,10 +1,11 @@
-const {assert, driver} = require('vl-ui-core').Test.Setup;
+const {assert, getDriver} = require('vl-ui-core').Test.Setup;
 const VlInputGroup = require('./pages/vl-input-group.page');
 
 describe('vl-input-group', async () => {
-  const vlInputGroup = new VlInputGroup(driver);
+  let vlInputGroup;
 
   before(async () => {
+    vlInputGroup = new VlInputGroup(getDriver());
     return vlInputGroup.load();
   });
 
