@@ -9,7 +9,11 @@ describe('vl-input-group', async () => {
     return vlInputGroup.load();
   });
 
-  it('Een gebruiker kan een input-group zien', async () => {
+  it('WCAG', async () => {
+    await assert.eventually.isFalse(vlInputGroup.hasWcagIssues());
+  });
+
+  it('een gebruiker kan een input-group zien', async () => {
     await assert.eventually.exists(vlInputGroup.getInputGroup());
   });
 });
